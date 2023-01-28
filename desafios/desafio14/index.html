@@ -7,7 +7,6 @@
     <title>Desadio Tabela</title>
     <style>
         table {
-            border: 1px solid black;
             border-collapse: collapse;
             padding: 2px;
         }
@@ -33,17 +32,17 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplina</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
             <tr>
-                <th rowspan="4" id="linha">Exatas</th>
+                <th rowspan="4" id="linha" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -68,11 +67,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4">Média Exatas</th>
+                <th colspan="4" scope="row">Média Exatas</th>
                 <th>0.0</th>
             </tr>
             <tr>
-                <th rowspan="2" id="linha">Humanas</th>
+                <th rowspan="2" id="linha" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -85,7 +84,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4">Média de Humanas</th>
+                <th colspan="4" scope="row">Média de Humanas</th>
                 <th>0.0</th>
             </tr>
         </thead>
